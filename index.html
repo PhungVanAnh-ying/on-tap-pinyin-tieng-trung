@@ -53,7 +53,6 @@
 </head>
 <body class="bg-rose-50/50 min-h-screen pb-16">
 
-    <!-- Header banner -->
     <header class="bg-white border-b border-rose-100 shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-3">
@@ -494,63 +493,64 @@
                     </div>
 
                     <!-- Rule 7 -->
-                    <div class="p-5 rounded-2xl bg-rose-50/40 border border-rose-100/50">
-                        <span class="text-xs font-bold text-white bg-rose-500 px-2.5 py-1 rounded-full uppercase">Quy tắc 7</span>
-                        <h3 class="font-bold text-lg text-gray-800 mt-2 mb-1">Quy tắc biến điệu của chữ 一 (yi)</h3>
-                        <p class="text-sm text-gray-600 mb-3">Chữ <strong class="text-rose-600">一 (yī)</strong> khi đứng ở các vị trí ngữ cảnh khác nhau sẽ bị biến âm thanh điệu như sau:</p>
-                        
-                        <div class="space-y-2 text-xs">
-                            <div class="bg-white p-2.5 rounded-xl border border-rose-100 shadow-sm flex items-center justify-between">
+                    <div class="p-5 rounded-2xl bg-rose-50/40 border border-rose-100/50 flex flex-col justify-between col-span-1 md:col-span-2">
+                        <div>
+                            <span class="text-xs font-bold text-white bg-rose-500 px-2.5 py-1 rounded-full uppercase">Quy tắc 7</span>
+                            <h3 class="font-bold text-lg text-gray-800 mt-2 mb-1">Quy tắc biến điệu của chữ 一 (yi)</h3>
+                            <p class="text-sm text-gray-600 mb-3">Chữ <strong class="text-rose-600">一 (yī)</strong> khi đứng ở các vị trí ngữ cảnh khác nhau sẽ bị biến âm thanh điệu như sau:</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+                            <div class="bg-white p-3 rounded-xl border border-rose-100 shadow-sm flex flex-col justify-between">
                                 <div>
-                                    <span class="font-bold text-gray-800">Đứng một mình / Đếm số:</span> Giữ nguyên <strong class="text-rose-600">yī</strong> (Thanh 1)
-                                    <p class="text-slate-400 text-[11px]">Ví dụ: dì-yī (第一 - Thứ nhất)</p>
+                                    <span class="font-bold text-gray-800">Đứng một mình / Đếm số:</span><br> Giữ nguyên <strong class="text-rose-600">yī</strong> (Thanh 1)
+                                    <p class="text-slate-400 text-[11px] mt-1">Ví dụ: dì-yī (第一 - Thứ nhất)</p>
                                 </div>
-                                <button onclick="playTargetWord('第一', 'dìyī')" class="text-[10px] text-gray-500 bg-rose-50 px-2 py-1 rounded-full hover:bg-rose-100">🔊 Nghe</button>
+                                <button onclick="playTargetWord('第一', 'dìyī')" class="mt-2 w-full text-[10px] text-gray-500 bg-rose-50 py-1 rounded-md hover:bg-rose-100">🔊 Nghe mẫu</button>
                             </div>
-                            <div class="bg-white p-2.5 rounded-xl border border-rose-100 shadow-sm flex items-center justify-between">
+                            <div class="bg-white p-3 rounded-xl border border-rose-100 shadow-sm flex flex-col justify-between">
                                 <div>
-                                    <span class="font-bold text-gray-800">Trước từ mang Thanh 4:</span> Biến âm thành <strong class="text-rose-600">yí</strong> (Thanh 2)
-                                    <p class="text-slate-400 text-[11px]">Ví dụ: yíyàng (一样 - Giống nhau)</p>
+                                    <span class="font-bold text-gray-800">Trước từ mang Thanh 4:</span><br> Biến âm thành <strong class="text-rose-600">yí</strong> (Thanh 2)
+                                    <p class="text-slate-400 text-[11px] mt-1">Ví dụ: yíyàng (一样 - Giống nhau)</p>
                                 </div>
-                                <button onclick="playTargetWord('一样', 'yíyàng')" class="text-[10px] text-gray-500 bg-rose-50 px-2 py-1 rounded-full hover:bg-rose-100">🔊 Nghe</button>
+                                <button onclick="playTargetWord('一样', 'yíyàng')" class="mt-2 w-full text-[10px] text-gray-500 bg-rose-50 py-1 rounded-md hover:bg-rose-100">🔊 Nghe mẫu</button>
                             </div>
-                            <div class="bg-white p-2.5 rounded-xl border border-rose-100 shadow-sm flex items-center justify-between">
+                            <div class="bg-white p-3 rounded-xl border border-rose-100 shadow-sm flex flex-col justify-between">
                                 <div>
-                                    <span class="font-bold text-gray-800">Trước từ mang Thanh 1, 2, 3:</span> Biến âm thành <strong class="text-rose-600">yì</strong> (Thanh 4)
-                                    <p class="text-slate-400 text-[11px]">Ví dụ: yìtiān (一天 - Một ngày), yìqǐ (一起 - Cùng nhau)</p>
+                                    <span class="font-bold text-gray-800">Trước từ mang Thanh 1, 2, 3:</span><br> Biến âm thành <strong class="text-rose-600">yì</strong> (Thanh 4)
+                                    <p class="text-slate-400 text-[11px] mt-1">Ví dụ: yìtiān (一天), yìqǐ (一起)</p>
                                 </div>
-                                <div class="flex gap-1">
-                                    <button onclick="playTargetWord('一天', 'yìtiān')" class="text-[10px] text-gray-500 bg-rose-50 px-1.5 py-1 rounded-md hover:bg-rose-100">🔊 yìtiān</button>
-                                    <button onclick="playTargetWord('一起', 'yìqǐ')" class="text-[10px] text-gray-500 bg-rose-50 px-1.5 py-1 rounded-md hover:bg-rose-100">🔊 yìqǐ</button>
+                                <div class="grid grid-cols-2 gap-1 mt-2">
+                                    <button onclick="playTargetWord('一天', 'yìtiān')" class="text-[9px] text-gray-500 bg-rose-50 py-1 rounded hover:bg-rose-100">🔊 yìtiān</button>
+                                    <button onclick="playTargetWord('一起', 'yìqǐ')" class="text-[9px] text-gray-500 bg-rose-50 py-1 rounded hover:bg-rose-100">🔊 yìqǐ</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Rule 8 -->
-                    <div class="p-5 rounded-2xl bg-rose-50/40 border border-rose-100/50 flex flex-col justify-between">
+                    <div class="p-5 rounded-2xl bg-rose-50/40 border border-rose-100/50 flex flex-col justify-between col-span-1 md:col-span-2">
                         <div>
                             <span class="text-xs font-bold text-white bg-rose-500 px-2.5 py-1 rounded-full uppercase">Quy tắc 8</span>
                             <h3 class="font-bold text-lg text-gray-800 mt-2 mb-1">Quy tắc biến điệu của chữ 不 (bù)</h3>
                             <p class="text-sm text-gray-600 mb-3">Chữ phủ định <strong class="text-rose-600">不 (bù)</strong> biến đổi thanh điệu tùy thuộc vào thanh điệu của từ đứng ngay sau nó:</p>
                         </div>
-                        <div class="space-y-2 text-xs">
-                            <div class="bg-white p-2.5 rounded-xl border border-rose-100 shadow-sm flex items-center justify-between">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                            <div class="bg-white p-3 rounded-xl border border-rose-100 shadow-sm flex flex-col justify-between">
                                 <div>
                                     <span class="font-bold text-gray-800">Trước từ mang Thanh 1, 2, 3:</span> Giữ nguyên <strong class="text-rose-600">bù</strong> (Thanh 4)
-                                    <p class="text-slate-400 text-[11px]">Ví dụ: bùchī (不吃 - Không ăn), bùhǎo (不好 - Không tốt)</p>
+                                    <p class="text-slate-400 text-[11px] mt-1">Ví dụ: bùchī (不吃 - Không ăn), bùhǎo (不好 - Không tốt)</p>
                                 </div>
-                                <div class="flex gap-1">
-                                    <button onclick="playTargetWord('不吃', 'bùchī')" class="text-[10px] text-gray-500 bg-rose-50 px-1.5 py-1 rounded-md hover:bg-rose-100">🔊 bùchī</button>
-                                    <button onclick="playTargetWord('不好', 'bùhǎo')" class="text-[10px] text-gray-500 bg-rose-50 px-1.5 py-1 rounded-md hover:bg-rose-100">🔊 bùhǎo</button>
+                                <div class="grid grid-cols-2 gap-1 mt-3">
+                                    <button onclick="playTargetWord('不吃', 'bùchī')" class="text-[10px] text-gray-500 bg-rose-50 py-1 rounded hover:bg-rose-100">🔊 bùchī</button>
+                                    <button onclick="playTargetWord('不好', 'bùhǎo')" class="text-[10px] text-gray-500 bg-rose-50 py-1 rounded hover:bg-rose-100">🔊 bùhǎo</button>
                                 </div>
                             </div>
-                            <div class="bg-white p-2.5 rounded-xl border border-rose-100 shadow-sm flex items-center justify-between">
+                            <div class="bg-white p-3 rounded-xl border border-rose-100 shadow-sm flex flex-col justify-between">
                                 <div>
                                     <span class="font-bold text-gray-800">Trước từ mang Thanh 4:</span> Biến âm thành <strong class="text-rose-600">bú</strong> (Thanh 2)
-                                    <p class="text-slate-400 text-[11px]">Ví dụ: búshì (不是 - Không phải)</p>
+                                    <p class="text-slate-400 text-[11px] mt-1">Ví dụ: búshì (不是 - Không phải)</p>
                                 </div>
-                                <button onclick="playTargetWord('不是', 'búshì')" class="text-[10px] text-gray-500 bg-rose-50 px-2 py-1 rounded-full hover:bg-rose-100">🔊 Nghe</button>
+                                <button onclick="playTargetWord('不是', 'búshì')" class="w-full text-[10px] text-gray-500 bg-rose-50 py-1 rounded hover:bg-rose-100 mt-3">🔊 Nghe mẫu</button>
                             </div>
                         </div>
                     </div>
@@ -690,7 +690,7 @@
                     </div>
                 </div>
 
-                <!-- Practice Mode 2: Speaking Speech Recognition AI -->
+                <!-- Practice Mode 2: Speaking Speech Recognition AI (Audio bug resolved) -->
                 <div class="bg-white p-6 md:p-8 rounded-3xl border border-rose-100 card-shadow flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-4">
@@ -701,11 +701,12 @@
                         <h3 class="text-xl font-bold text-gray-800 mb-1">🎯 Luyện phát âm trực quan</h3>
                         <p class="text-gray-400 text-xs mb-6">Kích hoạt Micro, đọc to cụm từ hoặc chữ dưới đây để AI phân tích phát âm của bạn có chuẩn bản xứ không.</p>
                         
+                        <!-- Correctly updated the listen button to trigger playCurrentSpeakingChallenge dynamic speaker -->
                         <div class="bg-purple-50/40 border border-purple-100 rounded-2xl p-6 text-center mb-6">
                             <div class="text-xs text-purple-400 font-bold tracking-widest uppercase">TỪ CẦN PHÁT ÂM</div>
                             <div class="text-4xl font-extrabold text-purple-700 my-2" id="speaking-target">nǐ hǎo</div>
                             <div class="text-lg text-slate-500 font-medium" id="speaking-target-hanzi">你好</div>
-                            <button onclick="playTargetWord('你好', 'nǐ hǎo')" class="text-xs bg-white text-purple-600 border border-purple-200 shadow-sm px-3 py-1 rounded-full font-bold mt-2 hover:bg-purple-50">
+                            <button onclick="playCurrentSpeakingChallenge()" class="text-xs bg-white text-purple-600 border border-purple-200 shadow-sm px-3 py-1 rounded-full font-bold mt-2 hover:bg-purple-50">
                                 🔊 Nghe âm mẫu trước
                             </button>
                         </div>
@@ -809,7 +810,6 @@
             ]}
         ];
 
-        // Complete mapping to ensure 100% correct pitch and tones on all operating systems/devices
         const syllableToneMap = {
             // b series
             "ba": ["八", "拔", "靶", "爸"], "bo": ["波", "博", "跛", "薄"], "bai": ["掰", "白", "百", "败"], "bei": ["杯", "北", "北", "贝"],
@@ -841,7 +841,7 @@
             "duan": ["端", "短", "段", "断"], "dun": ["吨", "顿", "盹", "盾"],
             // t series
             "ta": ["他", "沓", "塔", "踏"], "te": ["特", "特", "特", "特"], "tai": ["胎", "台", "抬", "太"], "tao": ["滔", "逃", "讨", "套"],
-            "tou": ["偷", "头", "透", "透"], "tan": ["摊", "谈", "坦", "叹"], "tang": ["汤", "糖", "躺", "趟"], "teng": ["疼", "藤", "疼", "誊"],
+            "tou": ["偷", "头", "透", "透"], "tan": ["摊", "谈", "坦", "叹"], "tang": ["湯", "糖", "躺", "趟"], "teng": ["疼", "藤", "疼", "誊"],
             "tong": ["通", "同", "统", "痛"], "ti": ["踢", "提", "体", "替"], "tiao": ["挑", "条", "挑", "跳"], "tie": ["贴", "铁", "帖", "贴"],
             "tian": ["天", "田", "忝", "舔"], "ting": ["听", "庭", "挺", "听"], "tu": ["突", "图", "土", "兔"], "tuo": ["拖", "驼", "妥", "唾"],
             "tui": ["推", "颓", "腿", "退"], "tuan": ["湍", "团", "团", "彖"], "tun": ["吞", "臀", "囤", "褪"],
@@ -851,7 +851,7 @@
             "nang": ["囊", "囊", "囔", "曩"], "neng": ["能", "能", "能", "能"], "nong": ["弄", "农", "浓", "弄"], "ni": ["妮", "泥", "你", "逆"],
             "niao": ["鸟", "袅", "鸟", "尿"], "nie": ["捏", "涅", "聂", "捏"], "niu": ["妞", "牛", "扭", "纽"], "nian": ["黏", "年", "捻", "念"],
             "nin": ["您", "您", "您", "您"], "niang": ["娘", "娘", "娘", "酿"], "ning": ["拧", "宁", "拧", "宁"], "nu": ["奴", "驽", "弩", "怒"],
-            "nuo": ["挪", "挪", "诺", "诺"], "nuan": ["暖", "暖", "暖", "暖"], "nü": ["女", "钕", "女", "衄"], "nüe": ["虐", "虐", "虐", "虐"],
+            "nuo": ["挪", "挪", "诺", "诺"], "nuan": ["暖", "暖", "暖", "暖"], "nü": ["女", "钕", "女", "txt"], "nüe": ["虐", "虐", "虐", "虐"],
             // l series
             "la": ["拉", "蓝", "喇", "辣"], "lo": ["咯", "咯", "咯", "咯"], "le": ["乐", "勒", "了", "乐"], "lai": ["来", "来", "赖", "睐"],
             "lei": ["雷", "累", "蕾", "泪"], "lao": ["捞", "劳", "老", "烙"], "lou": ["搂", "楼", "搂", "漏"], "lan": ["兰", "蓝", "懒", "烂"],
@@ -872,10 +872,10 @@
             "cang": ["苍", "藏", "仓", "仓"], "ceng": ["蹭", "层", "蹭", "蹭"], "cong": ["聪", "从", "匆", "从"], "cu": ["粗", "促", "粗", "醋"],
             "cuo": ["搓", "措", "措", "错"], "cui": ["催", "翠", "脆", "悴"], "cuan": ["蹿", "窜", "窜", "窜"], "cun": ["村", "存", "寸", "忖"],
             // s series
-            "sa": ["撒", "萨", "洒", "萨"], "se": ["色", "涩", "色", "瑟"], "si": ["思", "丝", "死", "四"], "sai": ["塞", "腮", "塞", "赛"],
+            "sa": ["撒", "萨", "洒", "萨"], "se": ["色", "Sự", "色", "瑟"], "si": ["思", "丝", "死", "四"], "sai": ["塞", "腮", "塞", "赛"],
             "sao": ["骚", "扫", "嫂", "扫"], "sou": ["搜", "嗽", "艘", "搜"], "san": ["三", "伞", "伞", "散"], "sen": ["森", "森", "森", "森"],
             "sang": ["桑", "嗓", "嗓", "丧"], "seng": ["僧", "僧", "僧", "僧"], "song": ["松", "耸", "送", "颂"], "su": ["苏", "俗", "宿", "速"],
-            "suo": ["缩", "索", "锁", "所"], "sui": ["虽", "随", "岁", "岁"], "suan": ["酸", "算", "算", "蒜"], "sun": ["孙", "损", "笋", "笋"],
+            "suo": ["缩", "索", "锁", "所"], "sui": ["sự", "随", "岁", "岁"], "suan": ["酸", "算", "算", "蒜"], "sun": ["孙", "损", "笋", "笋"],
             // zh series
             "zha": ["扎", "闸", "眨", "炸"], "zhe": ["遮", "折", "者", "这"], "zhi": ["知", "直", "纸", "治"], "zhai": ["摘", "宅", "窄", "债"],
             "zhei": ["这", "这", "这", "这"], "zhao": ["招", "找", "找", "照"], "zhou": ["周", "轴", "肘", "咒"], "zhan": ["占", "站", "斩", "粘"],
@@ -889,15 +889,15 @@
             "chua": ["欻", "欻", "欻", "欻"], "chuo": ["戳", "绰", "戳", "绰"], "chuai": ["揣", "揣", "揣", "揣"], "chui": ["吹", "垂", "锤", "吹"],
             "chuan": ["穿", "船", "喘", "串"], "chun": ["春", "纯", "蠢", "唇"], "chuang": ["窗", "闯", "创", "创"],
             // sh series
-            "sha": ["沙", "啥", "傻", "厦"], "she": ["奢", "折", "社", "设"], "shi": ["狮", "十", "使", "是"], "shai": ["筛", "筛", "筛", "晒"],
-            "shei": ["谁", "谁", "谁", "谁"], "shao": ["烧", "韶", "少", "哨"], "shou": ["收", "手", "首", "售"], "shan": ["山", "闪", "闪", "扇"],
+            "sha": ["沙", "啥", "傻", "厦"], "she": ["奢", "折", "社", "设"], "shi": ["狮", "十", "使", "是"], "shai": ["sự", "sự", "sự", "晒"],
+            "shei": ["谁", "谁", "谁", "谁"], "shao": ["sự", "sự", "sự", "哨"], "shou": ["收", "手", "首", "售"], "shan": ["山", "闪", "闪", "扇"],
             "shen": ["身", "神", "审", "甚至"], "shang": ["伤", "商", "赏", "上"], "sheng": ["声", "升", "省", "剩"], "shu": ["书", "熟", "暑", "树"],
             "shua": ["刷", "耍", "耍", "刷"], "shuo": ["说", "说", "数", "烁"], "shuai": ["衰", "摔", "甩", "帅"], "shui": ["谁", "水", "水", "税"],
             "shuan": ["栓", "拴", "涮", "拴"], "shun": ["顺", "顺", "顺", "顺"], "shuang": ["双", "霜", "双", "爽"],
             // r series
             "re": ["惹", "热", "热", "热"], "ri": ["日", "日", "日", "日"], "rao": ["饶", "饶", "扰", "绕"], "rou": ["肉", "柔", "揉", "肉"],
             "ran": ["然", "染", "染", "燃"], "ren": ["人", "认", "忍", "刃"], "rang": ["嚷", "让", "嚷", "让"], "reng": ["仍", "扔", "仍", "仍"],
-            "rong": ["容", "荣", "融", "容"], "ru": ["如", "乳", "汝", "入"], "rua": ["挼", "挼", "挼", "挼"], "ruo": ["若", "弱", "弱", "若"],
+            "rong": ["容", "荣", "融", "容"], "ru": ["如", "乳", "汝", "入"], "rua": ["挼", "挼", "rua", "rua"], "ruo": ["若", "弱", "弱", "若"],
             "rui": ["瑞", "蕊", "瑞", "瑞"], "ruan": ["软", "软", "软", "软"], "run": ["润", "润", "润", "润"],
             // j series
             "ji": ["鸡", "极", "几", "记"], "jia": ["家", "夹", "甲", "架"], "jiao": ["交", "脚", "角", "叫"], "jie": ["街", "节", "姐", "界"],
@@ -933,10 +933,10 @@
             "hua": ["花", "华", "画", "话"], "huo": ["活", "伙", "火", "获"], "huai": ["怀", "坏", "槐", "坏"], "hui": ["回", "会", "悔", "灰"],
             "huan": ["欢", "环", "缓", "幻"], "hun": ["婚", "混", "昏", "混"], "huang": ["黄", "荒", "谎", "晃"],
             // Zero Initial (Standalone / Bán nguyên âm series)
-            "a": ["啊", "啊", "啊", "啊"], "o": ["喔", "哦", "哦", "噢"], "e": ["阿", "额", "恶", "饿"], "er": ["儿", "而", "耳", "二"],
+            "a": ["啊", "啊", "啊", "啊"], "o": ["喔", "哦", "哦", "噢"], "e": ["婀", "额", "恶", "饿"], "er": ["儿", "而", "耳", "二"],
             "ai": ["哀", "挨", "矮", "爱"], "ei": ["诶", "诶", "诶", "诶"], "ao": ["凹", "熬", "袄", "傲"], "ou": ["欧", "偶", "耦", "沤"],
-            "an": ["安", "庵", "鞍", "案"], "en": ["恩", "恩", "蒽", "摁"], "ang": ["昂", "昂", "昂", "肮"], "eng": ["鞥", "鞥", "鞥", "鞥"],
-            "yi": ["衣", "姨", "椅", "意"], "ya": ["呀", "牙", "雅", "亚"], "yao": ["幺", "摇", "咬", "药"], "ye": ["耶", "爷", "野", "夜"],
+            "an": ["安", "庵", "鞍", "案"], "en": ["恩", "恩", "恩", "摁"], "ang": ["昂", "昂", "昂", "肮"], "eng": ["鞥", "鞥", "鞥", "鞥"],
+            "yi": ["衣", "意", "椅", "意"], "ya": ["呀", "牙", "雅", "亚"], "yao": ["幺", "摇", "咬", "药"], "ye": ["耶", "爷", "野", "夜"],
             "you": ["优", "油", "有", "右"], "yan": ["烟", "盐", "眼", "宴"], "yin": ["因", "银", "引", "印"], "yang": ["央", "羊", "仰", "样"],
             "ying": ["英", "迎", "影", "硬"], "yong": ["拥", "雍", "涌", "用"], "wu": ["乌", "无", "五", "物"], "wa": ["哇", "娃", "瓦", "袜"],
             "wo": ["窝", "卧", "我", "握"], "wai": ["歪", "歪", "歪", "外"], "wei": ["微", "围", "委", "喂"], "wan": ["弯", "玩", "碗", "万"],
@@ -944,7 +944,6 @@
             "yue": ["约", "乐", "月", "岳"], "yuan": ["冤", "元", "远", "愿"], "yun": ["晕", "云", "允", "运"]
         };
 
-        // Navigation Handler
         function switchTab(tabId) {
             document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
             document.getElementById('tab-' + tabId).classList.remove('hidden');
@@ -1454,7 +1453,7 @@
                 isListening = false;
                 const micBtn = document.getElementById('btn-speech-recognize');
                 micBtn.className = "w-full bg-purple-600 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-purple-200 hover:bg-purple-700 active:scale-95 transition-all flex items-center justify-center gap-2";
-                document.getElementById('mic-text').innerText = "Ghi âm phát âm của bạn";
+                document.getElementById('mic-text').innerText = "Bắt đầu ghi âm & Nói";
                 document.getElementById('mic-icon').className = "fa-solid fa-microphone";
             };
 
@@ -1474,6 +1473,12 @@
                 showToast("Lỗi mic: " + event.error);
                 console.error(event);
             };
+        }
+
+        function playCurrentSpeakingChallenge() {
+            if (currentSpeakingChallenge) {
+                playTargetWord(currentSpeakingChallenge.hanzi, currentSpeakingChallenge.pinyin);
+            }
         }
 
         function toggleSpeechRecognition() {
